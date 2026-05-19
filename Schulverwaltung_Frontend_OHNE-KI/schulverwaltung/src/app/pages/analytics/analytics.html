@@ -1,0 +1,61 @@
+<div class="analytics-box">
+
+<h1>Analytics</h1>
+
+<hr>
+
+<h2>Durchschnittsalter</h2>
+
+<button (click)="ladeDurchschnittsalter()">
+  Durchschnittsalter laden
+</button>
+
+<p>
+  Durchschnittsalter:
+  {{ durchschnittsalter }}
+</p>
+
+<hr>
+
+<h2>Frauenanteil berechnen</h2>
+
+<input
+  type="text"
+  placeholder="Klasse eingeben"
+  [(ngModel)]="klasseFrauenanteil"
+/>
+
+<button (click)="berechneFrauenanteil()">
+  Berechnen
+</button>
+
+<p>
+  Frauenanteil:
+  {{ frauenanteil }} %
+</p>
+
+<hr>
+
+<h2>Unterricht prüfen</h2>
+
+<input
+  type="text"
+  placeholder="Klasse"
+  [(ngModel)]="klasseUnterricht"
+/>
+
+<input
+  type="text"
+  placeholder="Raumname"
+  [(ngModel)]="raumUnterricht"
+/>
+
+<button (click)="pruefeUnterricht()">
+  Prüfen
+</button>
+
+<p>
+  {{ kannUnterrichtenErgebnis }}
+</p>
+
+</div>

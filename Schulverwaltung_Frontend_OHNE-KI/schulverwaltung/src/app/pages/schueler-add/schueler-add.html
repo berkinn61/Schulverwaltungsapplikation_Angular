@@ -1,0 +1,22 @@
+<p>schueler-add works!</p>
+<h1>Schüler hinzufügen</h1>
+
+<div class="form-container">
+
+  <label>Name</label>
+  <input type="text" [(ngModel)]="name">
+
+  <label>Klasse</label>
+  <input type="text" [(ngModel)]="klasse">
+
+  <label>Geschlecht</label>
+  <input type="text" [(ngModel)]="geschlecht">
+
+  <label>Geburtstag</label>
+  <input type="date" [(ngModel)]="geburtstag">
+
+  <button (click)="schuelerHinzufuegen()">
+    Schüler hinzufügen
+  </button>
+
+</div>

@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+
+  <span>Schulverwaltung</span>
+
+  <span class="spacer"></span>
+
+  <button mat-button routerLink="/">Dashboard</button>
+
+  <button mat-button routerLink="/schueler">
+    Schüler
+  </button>
+
+  <button mat-button routerLink="/schueler-add">
+    Schüler hinzufügen
+  </button>
+
+  <button mat-button routerLink="/klassenraeume">
+    Klassenräume
+  </button>
+
+  <button mat-button routerLink="/klassenraeume-add">
+    Klassenraum hinzufügen
+  </button>
+
+  <button mat-button routerLink="/analytics">
+    Analytics
+  </button>
+
+</mat-toolbar>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

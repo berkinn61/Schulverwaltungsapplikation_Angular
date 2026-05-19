@@ -1,0 +1,22 @@
+.analytics-box {
+
+  background-color: white;
+
+  padding: 25px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  width: 600px;
+}
+
+input {
+
+  margin-right: 10px;
+}
+
+hr {
+
+  margin: 25px 0;
+}
