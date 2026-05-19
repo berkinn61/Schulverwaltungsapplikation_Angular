@@ -4,7 +4,7 @@ using Schulwebapplikation.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Set specific port for the application
-builder.WebHost.UseUrls("http://localhost:5287");
+builder.WebHost.UseUrls("http://localhost:5208");
 
 // CORS für lokale Anfragen aktivieren
 builder.Services.AddCors(options =>
@@ -41,7 +41,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // Middleware-Konfiguration
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 

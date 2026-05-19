@@ -2,7 +2,7 @@
 {
     public class Klassenraum
     {
-        public int Id { get; set; } // Primary key for EF Core
+        public int Id { get; set; }
         public string Name { get; set; }
         public float RaumInQm { get; set; }
         public int Plaetze { get; set; }

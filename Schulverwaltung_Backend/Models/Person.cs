@@ -2,7 +2,7 @@
 {
     public class Person
     {
-        private string? _geschlecht; // Make nullable to avoid CS8618
+        private string? _geschlecht;
 
         public string Geschlecht
         {
@@ -26,7 +26,7 @@
         public Person(DateTime geburtstag, string geschlecht)
         {
             Geburtstag = geburtstag;
-            Geschlecht = geschlecht; // Setter handles validation
+            Geschlecht = geschlecht;
         }
     }
 }
