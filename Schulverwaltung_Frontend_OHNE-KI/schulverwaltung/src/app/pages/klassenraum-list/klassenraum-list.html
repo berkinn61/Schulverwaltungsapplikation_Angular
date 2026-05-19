@@ -1,0 +1,29 @@
+<h1>Klassenräume</h1>
+
+<table>
+
+  <thead>
+
+    <tr>
+      <th>Name</th>
+      <th>Quadratmeter</th>
+      <th>Plätze</th>
+      <th>Cynap</th>
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let raum of klassenraeume">
+
+      <td>{{ raum.name }}</td>
+      <td>{{ raum.raumInQm }}</td>
+      <td>{{ raum.plaetze }}</td>
+      <td>{{ raum.hasCynap }}</td>
+
+    </tr>
+
+  </tbody>
+
+</table>

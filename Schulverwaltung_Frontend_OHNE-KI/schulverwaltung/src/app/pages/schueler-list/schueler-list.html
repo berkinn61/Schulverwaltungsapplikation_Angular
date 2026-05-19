@@ -1,0 +1,29 @@
+<h1>Schülerliste</h1>
+
+<table>
+
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Klasse</th>
+      <th>Alter</th>
+      <th>Geschlecht</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr *ngFor="let schueler of schuelerListe">
+
+      <td>{{ schueler.id }}</td>
+      <td>{{ schueler.name }}</td>
+      <td>{{ schueler.klasse }}</td>
+      <td>{{ schueler.alter }}</td>
+      <td>{{ schueler.geschlecht }}</td>
+
+    </tr>
+
+  </tbody>
+
+</table>

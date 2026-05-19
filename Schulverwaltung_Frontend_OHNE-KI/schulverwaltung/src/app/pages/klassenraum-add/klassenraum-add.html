@@ -1,0 +1,21 @@
+<h1>Klassenraum hinzufügen</h1>
+
+<div class="form-container">
+
+  <label>Name</label>
+  <input type="text" [(ngModel)]="name">
+
+  <label>Quadratmeter</label>
+  <input type="number" [(ngModel)]="raumInQm">
+
+  <label>Plätze</label>
+  <input type="number" [(ngModel)]="plaetze">
+
+  <label>Cynap vorhanden</label>
+  <input type="checkbox" [(ngModel)]="hasCynap">
+
+  <button (click)="klassenraumHinzufuegen()">
+    Klassenraum hinzufügen
+  </button>
+
+</div>
